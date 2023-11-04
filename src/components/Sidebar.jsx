@@ -17,7 +17,7 @@ const Sidebar = ({ isSidebarOpen }) => {
       } lg:block lg:w-64 bg-black text-white py-4`}
     >
       <div className="text-center text-2xl text-[#AFF096] font-semibold">
-        <Link to="/">Gamified</Link>
+        <Link to="/">Sistem Pernafasan</Link>
       </div>
       <nav className="mt-8">
         <ul className="pr-4">
