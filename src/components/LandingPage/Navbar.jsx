@@ -29,7 +29,7 @@ const Navbar = ({ home, contact, about, programs }) => {
                 {user.username}
               </Link>
             ) : (
-              <Link to="/dashboard" className="border-2 px-4 py-2">
+              <Link to="/dashboard/overview" className="border-2 px-4 py-2">
                 Mulai Belajar
               </Link>
             )}
