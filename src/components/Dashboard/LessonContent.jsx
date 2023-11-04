@@ -31,7 +31,10 @@ const LessonContent = () => {
         {user && user.roles.includes("ROLE_ADMIN") && (
           <>
             <CreateLesson isOpen={isModalOpen} onClose={closeModal} />
-            <button className="border rounded-lg bg-blue-500 px-4 py-2" onClick={openModal}>
+            <button
+              className="border rounded-lg bg-blue-500 px-4 py-2"
+              onClick={openModal}
+            >
               Create Lesson
             </button>
           </>

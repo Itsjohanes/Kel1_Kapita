@@ -37,13 +37,8 @@ const Header = ({ username, logout, toggleSidebar, isSidebarOpen }) => {
           <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
             <ul>
               <li className="hover:bg-gray-100">
-                <Link to="/dashboard/settings" className="block px-4 py-2">
-                  Profil
-                </Link>
-              </li>
-              <li className="hover:bg-gray-100">
                 <Link to="/" className="block px-4 py-2" onClick={"/"}>
-                  Logout
+                  Keluar
                 </Link>
               </li>
             </ul>

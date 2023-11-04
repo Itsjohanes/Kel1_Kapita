@@ -1,124 +1,40 @@
-/* eslint-disable no-unused-vars */
-import AuthService from "../../services/auth.service";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import authHeader from "../../services/auth-header";
+import React from "react";
 
 const DashboardContent = () => {
-  const [user, setUser] = useState(undefined);
-  const [pointData, setPointData] = useState({
-    point: 0,
-  });
-  const [badgeData, setBadgeData] = useState([]);
-  const [allUserPoint, setAllUserPoint] = useState([]);
-  const [sortOrder, setSortOrder] = useState("desc");
-  useEffect(() => {
-    const currentUser = AuthService.getCurrentUser();
-
-    if (currentUser) {
-      setUser(currentUser);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (user && user.id) {
-      axios
-        .get(`http://localhost:5000/api/${user.id}/point`, {
-          headers: authHeader(),
-        })
-        .then((response) => {
-          setPointData(response.data);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    }
-  }, [user]);
-
-  useEffect(() => {
-    if (user && user.id) {
-      axios
-        .get(`http://localhost:5000/api/${user.id}/badge`, {
-          headers: authHeader(),
-        })
-        .then((response) => {
-          setBadgeData(response.data);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    }
-  }, [user]);
-
-  useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/point`, {
-        headers: authHeader(),
-      })
-      .then((response) => {
-        // Sort the data in descending order based on the 'point' property
-        const sortedData = response.data.sort((a, b) =>
-          sortOrder === "desc" ? b.point - a.point : a.point - b.point
-        );
-        setAllUserPoint(sortedData);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, [sortOrder]);
+  const topics = [
+    {
+      id: 1,
+      title: "Sistem Pernafasan",
+      description:
+        "Sistem pernafasan adalah serangkaian organ yang memungkinkan manusia untuk bernafas dan mengambil oksigen dari udara. Sistem ini melibatkan organ-organ seperti paru-paru, bronkus, dan diafragma.",
+      gambar: "/sistem.png",
+    },
+    {
+      id: 2,
+      title: "Penyakit pada Sistem Pernafasan",
+      description:
+        "Ada berbagai penyakit yang dapat memengaruhi sistem pernafasan, termasuk asma, bronkitis, pneumonia, dan penyakit paru-paru kronis. Penyakit-penyakit ini memerlukan perawatan medis yang tepat.",
+      gambar: "/penyakit.jpeg",
+    },
+  ];
 
   return (
-    <div>
-      {pointData && (
-        <div>
-          <p>Point: {pointData.point}</p>
+    <div className="container mx-auto mt-8">
+      <h2 className="text-2xl font-bold mb-4">Sistem Organ Pernafasan</h2>
+      {topics.map((topic) => (
+        <div key={topic.id} className="border p-4 rounded mb-4">
+          <img
+            src={`${topic.gambar}`}
+            alt={topic.title}
+            className="w-full h-48 object-cover mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">{topic.title}</h3>
+          <p className="text-gray-700 mb-4">{topic.description}</p>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+            Pelajari Lebih Lanjut
+          </button>
         </div>
-      )}
-      {badgeData && (
-        <div>
-          <h1>Badge</h1>
-          {badgeData.map((badge) => {
-            return (
-              <div key={badge._id} className="flex border max-w-fit my-2 p-4">
-                <img
-                  src={badge.image}
-                  alt="badge"
-                  className="w-10 rounded-full"
-                />
-                <div>
-                  <p>{badge.name}</p>
-                  <p>{badge.description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      )}
-      <div>
-        <h1>Leaderboard</h1>
-        {allUserPoint && (
-          <table>
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Username</th>
-                <th>Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {allUserPoint.map((userPoint, index) => {
-                return (
-                  <tr key={userPoint._id} className="border max-w-fit my-2 p-4">
-                    <td>{index + 1}</td>
-                    <td>{userPoint.user.username}</td>
-                    <td>{userPoint.point}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        )}
-      </div>
+      ))}
     </div>
   );
 };

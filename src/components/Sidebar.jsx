@@ -31,7 +31,7 @@ const Sidebar = ({ isSidebarOpen }) => {
               }
             >
               <RiDashboardFill className="w-6 h-6 mr-2" />
-              Beranda
+              Beranda Materi
             </NavLink>
           </li>
           <li className="mb-4">
@@ -44,7 +44,7 @@ const Sidebar = ({ isSidebarOpen }) => {
               }
             >
               <RiBookOpenLine className="w-6 h-6 mr-2" />
-              Kelas
+              Augmented Reality
             </NavLink>
           </li>
           <li className="mb-4">
@@ -58,32 +58,6 @@ const Sidebar = ({ isSidebarOpen }) => {
             >
               <MdOutlineQuiz className="w-6 h-6 mr-2" />
               Quiz
-            </NavLink>
-          </li>
-          <li className="mb-4">
-            <NavLink
-              to="/dashboard/tasks"
-              className={({ isActive }) =>
-                `p-4 flex rounded-sm hover:bg-[#FBF7EF] hover:text-black ${
-                  isActive ? "bg-[#FBF7EF] text-black" : ""
-                }`
-              }
-            >
-              <FaTasks className="w-6 h-6 mr-2" />
-              Tugas
-            </NavLink>
-          </li>
-          <li className="mb-4">
-            <NavLink
-              to="/dashboard/settings"
-              className={({ isActive }) =>
-                `p-4 flex rounded-sm hover:bg-[#FBF7EF] hover:text-black ${
-                  isActive ? "bg-[#FBF7EF] text-black" : ""
-                }`
-              }
-            >
-              <RiSettings2Line className="w-6 h-6 mr-2" />
-              Pengaturan
             </NavLink>
           </li>
         </ul>
