@@ -26,7 +26,7 @@ const DashboardContent = () => {
           <img
             src={`${topic.gambar}`}
             alt={topic.title}
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-auto object-cover mb-4 max-h-96"
           />
           <h3 className="text-xl font-semibold mb-2">{topic.title}</h3>
           <p className="text-gray-700 mb-4">{topic.description}</p>

@@ -6,25 +6,31 @@ const CpatpContent = () => {
       id: 1,
       title: "Hidung",
       description: "",
-      gambar: "/sistem.png",
+      gambar: "/nose.jpg",
     },
     {
       id: 2,
-      title: "Laring",
+      title: "Faring, Laring, Trakea",
       description: "",
-      gambar: "/penyakit.jpeg",
+      gambar: "/faring.jpg",
+    },
+    {
+      id: 3,
+      title: "Paru-Paru (Bronkus, Bronkiolus, dan Alveolus)",
+      description: "",
+      gambar: "/bronkus.jpg",
     },
   ];
 
   return (
     <div className="container mx-auto mt-8">
-      <h2 className="text-2xl font-bold mb-4">Sistem Organ Pernafasan</h2>
+      <h2 className="text-2xl font-bold mb-4">Organ Pernafasan</h2>
       {topics.map((topic) => (
         <div key={topic.id} className="border p-4 rounded mb-4">
           <img
             src={`${topic.gambar}`}
             alt={topic.title}
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-auto object-cover mb-4 max-h-96"
           />
           <h3 className="text-xl font-semibold mb-2">{topic.title}</h3>
           <p className="text-gray-700 mb-4">{topic.description}</p>
