@@ -16,7 +16,7 @@ const QuizContent = () => {
       description:
         "Ada berbagai penyakit yang dapat memengaruhi sistem pernafasan, termasuk asma, bronkitis, pneumonia, dan penyakit paru-paru kronis. Penyakit-penyakit ini memerlukan perawatan medis yang tepat.",
       gambar: "/penyakit.jpeg",
-      link: "/dashboard/quiz-pernafasan",
+      link: "/dashboard/quiz-penyakit",
     },
   ];
 

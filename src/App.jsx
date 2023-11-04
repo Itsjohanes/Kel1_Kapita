@@ -13,6 +13,8 @@ import ListTask from "./components/Tasks/ListTask";
 import DetailTask from "./components/Tasks/DetailTask";
 import ListTaskSubmit from "./components/Tasks/ListTaskSubmit";
 import QuizContent from "./components/Dashboard/QuizContent";
+import QuizPernafasan from "./components/Dashboard/QuizPernafasan";
+import QuizPenyakit from "./components/Dashboard/QuizPenyakit";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           </Route>
           {/* Ini adalah rute untuk konten kursus */}
           <Route path="quiz" element={<QuizContent />} />
+          <Route path="quiz-pernafasan" element={<QuizPernafasan />} />
+          <Route path="quiz-penyakit" element={<QuizPenyakit />} />
           <Route path="tasks" element={<TasksContent />}>
             <Route index element={<ListTask />} />
             <Route path="list" element={<ListTaskSubmit />} />
