@@ -20,7 +20,7 @@ const DashboardContent = () => {
 
   return (
     <div className="container mx-auto mt-8">
-      <h2 className="text-2xl font-bold mb-4">Sistem Organ Pernafasan</h2>
+      <h2 className="text-2xl font-bold mb-4">Materi</h2>
       {topics.map((topic) => (
         <div key={topic.id} className="border p-4 rounded mb-4">
           <img
