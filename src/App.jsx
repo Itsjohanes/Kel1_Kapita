@@ -13,9 +13,10 @@ import ListTask from "./components/Tasks/ListTask";
 import DetailTask from "./components/Tasks/DetailTask";
 import ListTaskSubmit from "./components/Tasks/ListTaskSubmit";
 import QuizContent from "./components/Dashboard/QuizContent";
-import QuizPernafasan from "./components/Dashboard/QuizPernafasan";
-import QuizPenyakit from "./components/Dashboard/QuizPenyakit";
-
+import QuizPernafasan from "./components/Dashboard/QuizPernafasanContent";
+import QuizPenyakit from "./components/Dashboard/QuizPenyakitContent";
+import AugmentedReality from "./components/Dashboard/AugmentedRealityContent";
+import AugmentedRealityMenuContent from "./components/Dashboard/AugmentedRealityMenuContent";
 function App() {
   return (
     <div>
@@ -30,6 +31,10 @@ function App() {
             <Route path="lesson" element={<LessonContent />}>
               <Route path=":lessonId" element={<LessonDetail />} />
             </Route>
+          </Route>
+          {/*Ini adalah rute untuk augmented reality*/}
+          <Route path="ar" element={<AugmentedReality />}>
+            <Route index element={<AugmentedRealityMenuContent />} />
           </Route>
           {/* Ini adalah rute untuk konten kursus */}
           <Route path="quiz" element={<QuizContent />} />

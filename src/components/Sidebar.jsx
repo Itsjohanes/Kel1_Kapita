@@ -36,7 +36,7 @@ const Sidebar = ({ isSidebarOpen }) => {
           </li>
           <li className="mb-4">
             <NavLink
-              to="/dashboard/course"
+              to="/dashboard/ar"
               className={({ isActive }) =>
                 `p-4 flex rounded-sm hover:bg-[#FBF7EF] hover:text-black ${
                   isActive ? "bg-[#FBF7EF] text-black" : ""
