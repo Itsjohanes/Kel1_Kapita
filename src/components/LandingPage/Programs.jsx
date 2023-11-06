@@ -11,11 +11,11 @@ const Programs = () => {
               alt="placeholder"
               width="150"
               height="150"
-
             />
             <h2 className="text-center text-xl font-bold my-2">Materi</h2>
             <p className="text-center">
-              Materi yang diberikan ringkas dan menarik untuk dipelajari dan sesuai dengan kurikulum merdeka
+              Materi yang diberikan ringkas dan menarik untuk dipelajari dan
+              sesuai dengan kurikulum merdeka
             </p>
           </div>
         </div>
@@ -30,7 +30,8 @@ const Programs = () => {
             />
             <h2 className="text-center text-xl font-bold my-2">Gambar 2D</h2>
             <p className="text-center">
-              Materi dilengkapi dengan gambar-gambar untuk memudahkan visualisasi materi
+              Materi dilengkapi dengan gambar-gambar untuk memudahkan
+              visualisasi materi
             </p>
           </div>
         </div>
@@ -42,11 +43,13 @@ const Programs = () => {
               alt="placeholder"
               width="150"
               height="150"
-
             />
-            <h2 className="text-center text-xl font-bold my-2">Gambar 3D</h2>
+            <h2 className="text-center text-xl font-bold my-2">
+              Virtual Reality
+            </h2>
             <p className="text-center">
-              Media Pembelajaran ini menyediakan Gambar 3D dalam bentuk Augmented Reality
+              Media Pembelajaran ini menyediakan Fitur Virtual Reality Berupa
+              Galeri Sistem Pernafasan
             </p>
           </div>
         </div>
@@ -58,11 +61,12 @@ const Programs = () => {
               alt="placeholder"
               width="150"
               height="150"
-
             />
             <h2 className="text-center text-xl font-bold my-2">AR</h2>
             <p className="text-center">
-              Media Pembelajaran ini menyediakan Augmented Reality untuk memudahkan visualisasi materi yang dipelajari dengan menampilkan model 3D
+              Media Pembelajaran ini menyediakan Augmented Reality untuk
+              memudahkan visualisasi materi yang dipelajari dengan menampilkan
+              model 3D
             </p>
           </div>
         </div>
