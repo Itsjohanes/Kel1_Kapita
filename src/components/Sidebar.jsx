@@ -6,6 +6,8 @@ import {
   RiDashboardFill,
   RiBookOpenLine,
   RiSettings2Line,
+  RiSmartphoneFill,
+  RiMetaFill,
 } from "react-icons/ri";
 import { NavLink, Link } from "react-router-dom";
 
@@ -43,8 +45,21 @@ const Sidebar = ({ isSidebarOpen }) => {
                 }`
               }
             >
-              <RiBookOpenLine className="w-6 h-6 mr-2" />
+              <RiSmartphoneFill className="w-6 h-6 mr-2" />
               Augmented Reality
+            </NavLink>
+          </li>
+          <li className="mb-4">
+            <NavLink
+              to="https://hubs.mozilla.com/MineZXA/spiteful-immense-soiree"
+              className={({ isActive }) =>
+                `p-4 flex rounded-sm hover:bg-[#FBF7EF] hover:text-black ${
+                  isActive ? "bg-[#FBF7EF] text-black" : ""
+                }`
+              }
+            >
+              <RiMetaFill className="w-6 h-6 mr-2" />
+              Virtual Reality
             </NavLink>
           </li>
           <li className="mb-4">
