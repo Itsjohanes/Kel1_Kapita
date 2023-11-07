@@ -51,7 +51,7 @@ const Sidebar = ({ isSidebarOpen }) => {
           </li>
           <li className="mb-4">
             <NavLink
-              to="https://hubs.mozilla.com/MineZXA/spiteful-immense-soiree"
+              to="https://hubs.mozilla.com/fUgwAzP/numb-active-world"
               className={({ isActive }) =>
                 `p-4 flex rounded-sm hover:bg-[#FBF7EF] hover:text-black ${
                   isActive ? "bg-[#FBF7EF] text-black" : ""
