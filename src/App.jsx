@@ -17,12 +17,16 @@ import QuizPernafasan from "./components/Dashboard/QuizPernafasanContent";
 import QuizPenyakit from "./components/Dashboard/QuizPenyakitContent";
 import AugmentedReality from "./components/Dashboard/AugmentedRealityContent";
 import AugmentedRealityMenuContent from "./components/Dashboard/AugmentedRealityMenuContent";
+import ImageTrackingExample from "./components/Augmented/image-tracking-example";
+
 function App() {
   return (
     <div>
       <Toaster position="top-right" toastOptions={{ duration: 2000 }} />
       <Routes>
+        
         <Route path="/" element={<Homepage />} />
+        <Route path="/ar" element={<ImageTrackingExample />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="overview" element={<DashboardContent />} />{" "}
           {/* Ini adalah rute utama */}
