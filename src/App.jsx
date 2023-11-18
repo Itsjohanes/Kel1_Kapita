@@ -30,8 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/dashboard" element={<Dashboard />}>
-          <Route path="sistempernafasan" element={<MateriTemplate data={penyakitMateri} />} />
-          <Route path="penyakit" element={<MateriTemplate data={SistemPernafasanMateri}/>} />
+          <Route path="sistempernafasan" element={<MateriTemplate data={SistemPernafasanMateri} />} />
+          <Route path="penyakit" element={<MateriTemplate data={penyakitMateri}/>} />
           <Route path="overview" element={<DashboardContent />} />{" "}
           {/* Ini adalah rute utama */}
           <Route path="course" element={<CourseContent />}>
