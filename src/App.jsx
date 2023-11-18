@@ -17,8 +17,11 @@ import QuizPernafasan from "./components/Dashboard/QuizPernafasanContent";
 import QuizPenyakit from "./components/Dashboard/QuizPenyakitContent";
 import AugmentedReality from "./components/Dashboard/AugmentedRealityContent";
 import AugmentedRealityMenuContent from "./components/Dashboard/AugmentedRealityMenuContent";
-import SistemPernafasanPage from "./components/Dashboard/SistemPernafasanPage";
-import PenyakitPage from "./components/Dashboard/PenyakitPage";
+import MateriTemplate from "./components/Dashboard/MateriTemplate";
+import penyakitMateri from "./components/Dashboard/Data/PenyakitMateri";
+import SistemPernafasanMateri from "./components/Dashboard/Data/SistemPernafasanMateri";
+
+
 
 function App() {
   return (
@@ -27,8 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/dashboard" element={<Dashboard />}>
-          <Route path="sistempernafasan" element={<SistemPernafasanPage />} />
-          <Route path="penyakit" element={<PenyakitPage />} />
+          <Route path="sistempernafasan" element={<MateriTemplate data={penyakitMateri} />} />
+          <Route path="penyakit" element={<MateriTemplate data={SistemPernafasanMateri}/>} />
           <Route path="overview" element={<DashboardContent />} />{" "}
           {/* Ini adalah rute utama */}
           <Route path="course" element={<CourseContent />}>
