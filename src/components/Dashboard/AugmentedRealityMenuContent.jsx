@@ -4,21 +4,17 @@ const AugmentedRealityMenuContent = () => {
   const topics = [
     {
       id: 1,
-      title: "Hidung",
-      description: "",
-      gambar: "/nose.jpg",
-    },
-    {
-      id: 2,
       title: "Faring, Laring, Trakea",
       description: "",
       gambar: "/faring.jpg",
+      link  : "https://mind-ar2-laring.vercel.app/",
     },
     {
-      id: 3,
+      id: 2,
       title: "Paru-Paru (Bronkus, Bronkiolus, dan Alveolus)",
       description: "",
       gambar: "/bronkus.jpg",
+      link  : "https://mind-ar-paru-paru.vercel.app/",
     },
   ];
 
@@ -34,9 +30,14 @@ const AugmentedRealityMenuContent = () => {
           />
           <h3 className="text-xl font-semibold mb-2">{topic.title}</h3>
           <p className="text-gray-700 mb-4">{topic.description}</p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+          <a
+            href={topic.link}
+            target="_blank" // opens the link in a new tab/window
+            rel="noopener noreferrer" // recommended for security
+            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+          >
             Pelajari Lebih Lanjut
-          </button>
+          </a>
         </div>
       ))}
     </div>
