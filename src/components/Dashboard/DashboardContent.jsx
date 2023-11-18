@@ -8,7 +8,7 @@ const DashboardContent = () => {
       description:
         "Sistem pernafasan adalah serangkaian organ yang memungkinkan manusia untuk bernafas dan mengambil oksigen dari udara. Sistem ini melibatkan organ-organ seperti paru-paru, bronkus, dan diafragma.",
       gambar: "/sistem.png",
-      link: "",
+      link: "./sistempernafasan",
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const DashboardContent = () => {
       description:
         "Ada berbagai penyakit yang dapat memengaruhi sistem pernafasan, termasuk asma, bronkitis, pneumonia, dan penyakit paru-paru kronis. Penyakit-penyakit ini memerlukan perawatan medis yang tepat.",
       gambar: "/penyakit.jpeg",
-      link: "",
+      link: "./penyakit",
     },
   ];
 
