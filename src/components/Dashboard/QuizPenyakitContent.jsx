@@ -5,38 +5,46 @@ import QuizResult from "./QuizResult";
 const questions = [
   {
     id: 1,
-    question: "Apa yang menjadi penyebab utama penyakit asma?",
-    options: [
-      "Infeksi virus",
-      "Radikal bebas dalam udara",
-      "Reaksi alergi terhadap zat tertentu",
-      "Kurangnya olahraga fisik",
-    ],
-    correctAnswer: "Reaksi alergi terhadap zat tertentu",
+    question: "Bronkitis adalah iritasi yang terjadi pada...",
+    options: ["Alveolus", "Trakea", "Laring", "Bronkus"],
+    correctAnswer: "Bronkus",
   },
   {
     id: 2,
-    question: "Penyakit apa yang ditandai dengan peradangan pada bronkus?",
-    options: ["Asma", "Pneumonia", "Bronkitis", "Emfisema"],
-    correctAnswer: "Bronkitis",
+    question:
+      "Mayoritas orang yang terkena penyakit kanker paru-paru adalah orang yang...",
+    options: [
+      "Kebiasaan merokok",
+      "Kebiasaan mencium bau rokok",
+      "Kebiasaan membakar sampah",
+      "Diam di tempat angkringan dekat jalan",
+    ],
+    correctAnswer: "Kebiasaan merokok",
   },
   {
     id: 3,
-    question: "Apa yang disebut dengan penyakit radang paru-paru?",
-    options: ["Asma", "Bronkitis", "Pneumonia", "Tuberkulosis"],
-    correctAnswer: "Pneumonia",
+    question:
+      "Penyakit yang merusak bagian paru-paru terutama Alveolus adalah?",
+    options: ["Kanker Paru-Paru", "Bronkitis", "Emfisema", "Aterosklerosis"],
+    correctAnswer: "Emfisema",
   },
   {
     id: 4,
     question:
-      "Apa nama penyakit kronis yang menyebabkan penyempitan saluran udara?",
+      "Berapa jumlah pasien yang meninggal pada tahun 2018 akibat kanker paru-paru?",
+    options: ["26.000", "27.000", "6.000", "16.000"],
+    correctAnswer: "26.000",
+  },
+  {
+    id: 5,
+    question: "Aterosklerosis disebabkan oleh?",
     options: [
-      "Asma",
-      "Bronkitis",
-      "Pneumonia",
-      "Penyakit Paru-Paru Obstruktif Kronik (PPOK)",
+      "zat kimia seperti tar",
+      "Karbon Dioksida",
+      "Karbon Monoksida",
+      "Methanol",
     ],
-    correctAnswer: "Penyakit Paru-Paru Obstruktif Kronik (PPOK)",
+    correctAnswer: "zat kimia seperti tar",
   },
 ];
 

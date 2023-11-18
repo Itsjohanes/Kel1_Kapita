@@ -5,20 +5,53 @@ import QuizResult from "./QuizResult";
 const questions = [
   {
     id: 1,
-    question: "Apa yang merupakan organ utama dalam sistem pernafasan manusia?",
-    options: ["Jantung", "Paru-paru", "Hati", "Ginjal"],
-    correctAnswer: "Paru-paru",
+    question: "Setelah udara masuk ke dalam hidung, udara masuk ke?",
+    options: ["Faring", "Trakea", "Bronkus", "Paru-paru"],
+    correctAnswer: "Faring",
   },
   {
     id: 2,
-    question: "Apa yang terjadi saat Anda menghirup udara?",
+    question: "Bagian manakah dari sebuah system pernapasan yang berfungsi sebagai penyaring udara?",
     options: [
-      "Oksigen masuk ke darah, karbon dioksida keluar dari tubuh",
-      "Karbondioksida masuk ke darah, oksigen keluar dari tubuh",
-      "Tidak ada perubahan",
-      "Semua jawaban salah",
+      "Alveolus",
+      "Hidung",
+      "Trakea",
+      "Faring",
     ],
-    correctAnswer: "Oksigen masuk ke darah, karbon dioksida keluar dari tubuh",
+    correctAnswer: "Hidung",
+  },
+   {
+    id: 3,
+    question: "Apa fungsi utama dari Bronkus dalam system pernapasan?",
+    options: [
+      "Memastikan aliran udara ke paru-paru",
+      "Menyaring Partikel berbahaya dari udara",
+      "Mengatur tekanan udara",
+      "Pertukaran gas oksigen dan Karbon dioksida",
+    ],
+    correctAnswer: "Memastikan aliran udara ke paru-paru",
+  },
+   {
+    id: 4,
+    question: "Susunlah alur perjalanan udara dari masuknya hidung hingga paru-paru sesuai dengan urutan yang benar:",
+    options: [
+      "Udara masuk melalui hidung > Faring > Laring > Trakea > Bronkus",
+      "Udara masuk melalui hidung > Trakea > Faring > Laring > Bronkus",
+      "Udara masuk melalui hidung > Laring > Faring > Trakea > Bronkus",
+      "Udara masuk melalui hidung > Laring > Trakea > Bronkus",
+    ],
+    correctAnswer: "Udara masuk melalui hidung > Faring > Laring > Trakea > Bronkus",
+  },
+  {
+    id: 5,
+    question: "Dalam mekanisme pernapasan dada, otot yang mengalami kontraksi adalah",
+    options: [
+      "Diafragma",
+      "Antar tulang rusuk (Interkostal)",
+      "Leher",
+      "Area Perut (Abdominal)",
+    ],
+    correctAnswer: "Antar tulang rusuk (Interkostal)",
   },
   // Tambahkan pertanyaan lain sesuai kebutuhan
 ];
