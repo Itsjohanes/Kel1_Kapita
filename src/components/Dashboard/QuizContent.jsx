@@ -34,7 +34,7 @@ const QuizContent = () => {
           <p className="text-gray-700 mb-4">{topic.description}</p>
           <a
             href={`${topic.link}`}
-            className="block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-1 px-2 rounded text-center mt-2 w-24"
+            className="w-fit px-4 py-2 block bg-blue-500 hover:bg-blue-700 text-white font-semibold  rounded text-center mt-2"
           >
             Kerjakan Quiz
           </a>
