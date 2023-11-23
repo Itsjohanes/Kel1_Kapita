@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import AuthService from "../../services/auth.service";
 
 const Navbar = ({ home, contact, about, programs }) => {
   const [user, setUser] = useState(undefined);
