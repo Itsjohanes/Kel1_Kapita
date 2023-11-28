@@ -3,18 +3,25 @@ import React from "react";
 const AugmentedRealityMenuContent = () => {
   const topics = [
     {
+      id: 0,
+      title: "Hidung",
+      description: "",
+      gambar: "/nose.jpg",
+      link: "https://hidung-ar-mind.vercel.app/",
+    },
+    {
       id: 1,
       title: "Faring, Laring, Trakea",
       description: "",
       gambar: "/faring.jpg",
-      link  : "https://mind-ar2-laring.vercel.app/",
+      link: "https://mind-ar2-laring.vercel.app/",
     },
     {
       id: 2,
       title: "Paru-Paru (Bronkus, Bronkiolus, dan Alveolus)",
       description: "",
       gambar: "/bronkus.jpg",
-      link  : "https://mind-ar-paru-paru.vercel.app/",
+      link: "https://mind-ar-paru-paru.vercel.app/",
     },
   ];
 
