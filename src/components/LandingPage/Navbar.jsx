@@ -1,18 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 
-const Navbar = ({ home, contact, about, programs }) => {
-  const [user, setUser] = useState(undefined);
-
-  useEffect(() => {
-    const currentUser = AuthService.getCurrentUser();
-
-    if (currentUser) {
-      setUser(currentUser);
-    }
-  }, []);
-
+const Navbar = ({ home, about, programs }) => {
   return (
     <div className="border-b-2 fixed w-full bg-white">
       <nav className="text-cyan-800 p-6">
@@ -23,15 +12,10 @@ const Navbar = ({ home, contact, about, programs }) => {
             </Link>
             <Link onClick={programs}>Programs</Link>
             <Link onClick={about}>About Us</Link>
-            {user ? (
-              <Link to="/dashboard/overview" className="border-2 px-4 py-2">
-                {user.username}
-              </Link>
-            ) : (
-              <Link to="/dashboard/overview" className="border-2 px-4 py-2">
-                Mulai Belajar
-              </Link>
-            )}
+
+            <Link to="/dashboard/overview" className="border-2 px-4 py-2">
+              Mulai Belajar
+            </Link>
           </div>
         </div>
       </nav>
