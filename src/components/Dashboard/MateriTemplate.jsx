@@ -24,7 +24,7 @@ const MateriTemplate = ({data}) => {
   return (
     <div className="flex flex-col lg:flex-row">
       {/* Konten utama */}
-      <div className="w-full lg:w-3/4 p-4 mr-4 border-r">
+      <div className="w-full lg:w-5/6 p-4 mr-4 bg-secondary rounded-md">
         {data.map((page, index) => (
           <div
             key={page.id}
@@ -48,13 +48,13 @@ const MateriTemplate = ({data}) => {
       </div>
 
       {/* Navigasi samping di sebelah kanan */}
-      <div className="w-full lg:w-1/4 p-4 border-l">
+      <div className="w-full lg:w-1/6 p-4 bg-gray lg:mt-0 mt-2 rounded-md" style={{height: "fit-content"}}>
         <h3 className="text-xl font-bold mb-4 block lg:hidden">Halaman {currentPage +1 }</h3>
-        <ul className="hidden lg:block">
+        <ul className="hidden lg:flex flex-col">
           {data.map((page, index) => (
             <li
               key={page.id}
-              className={`cursor-pointer ${
+              className={` justify-center text-center text-xl cursor-pointer ${
                 index === currentPage ? "font-semibold" : ""
               }`}
               onClick={() => goToPage(index)}
@@ -66,13 +66,13 @@ const MateriTemplate = ({data}) => {
         <div className="mt-4 w-full flex justify-between lg:justify-start">
           <button
             onClick={goToPrevPage}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded mr-2"
+            className="bg-button text-black border w-1/2 font-semibold py-2 px-4 rounded mr-2"
           >
             Prev
           </button>
           <button
             onClick={goToNextPage}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+            className="bg-button text-black border w-1/2 font-semibold py-2 px-4 rounded"
           >
             Next
           </button>

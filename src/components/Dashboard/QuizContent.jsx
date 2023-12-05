@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const QuizContent = () => {
   const topics = [
@@ -7,7 +8,7 @@ const QuizContent = () => {
       title: "Sistem Pernafasan",
       description:
         "Sistem pernafasan adalah serangkaian organ yang memungkinkan manusia untuk bernafas dan mengambil oksigen dari udara. Sistem ini melibatkan organ-organ seperti paru-paru, bronkus, dan diafragma.",
-      gambar: "/sistem.png",
+      gambar: "/pernafasan.jpg",
       link: "/dashboard/quiz-pernafasan",
     },
     {
@@ -15,32 +16,31 @@ const QuizContent = () => {
       title: "Penyakit pada Sistem Pernafasan",
       description:
         "Ada berbagai penyakit yang dapat memengaruhi sistem pernafasan, termasuk asma, bronkitis, pneumonia, dan penyakit paru-paru kronis. Penyakit-penyakit ini memerlukan perawatan medis yang tepat.",
-      gambar: "/penyakit.jpeg",
+      gambar: "/penyakit.jpg",
       link: "/dashboard/quiz-penyakit",
     },
   ];
 
   return (
-    <div className="container mx-auto mt-8">
-      <h2 className="text-2xl font-bold mb-4">Pilihan Quiz</h2>
-      {topics.map((topic) => (
-        <div key={topic.id} className="border p-4 rounded mb-4">
-          <img
-            src={`${topic.gambar}`}
-            alt={topic.title}
-            className="w-full h-auto object-cover mb-4 max-h-96"
-          />
-          <h3 className="text-xl font-semibold mb-2">{topic.title}</h3>
-          <p className="text-gray-700 mb-4">{topic.description}</p>
-          <a
-            href={`${topic.link}`}
-            className="w-fit px-4 py-2 block bg-blue-500 hover:bg-blue-700 text-white font-semibold  rounded text-center mt-2"
-          >
-            Kerjakan Quiz
-          </a>
-        </div>
-      ))}
-    </div>
+    <div className="container mx-auto mt-8 ">
+    {topics.map((topic) => (
+      <div key={topic.id} className="p-4 rounded mb-4 bg-button">
+        <img
+          src={`${topic.gambar}`}
+          alt={topic.title}
+          className="w-full h-auto object-cover mb-4 max-h-96"
+        />
+        <h3 className="text-xl lg:text-left text-center font-semibold mb-2">{topic.title}</h3>
+        <p className="text-gray-700 mb-4 text-justify">{topic.description}</p>
+        <a
+          href={`${topic.link}`}
+          className="block bg-black hover:bg-button hover:border hover:text-black text-white font-semibold py-3 rounded text-center mt-2 w-full "
+        > 
+          Kerjakan Quiz Sekarang <FaArrowRight className="inline-block" />
+        </a>
+      </div>
+    ))}
+  </div>
   );
 };
 

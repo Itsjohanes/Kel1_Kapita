@@ -20,15 +20,15 @@ const QuizQuestion= ({
   }, [question]); // Reset when the question prop changes
 
   return (
-    <div className="bg-white p-4 rounded shadow mb-4">
+    <div className="bg-button p-4 rounded shadow mb-4 ">
       <h2 className="text-lg font-semibold mb-4">{question.question}</h2>
       <div className="grid grid-cols-2 gap-4">
         {question.options.map((option, index) => (
           <button
             key={index}
             className={`${
-              selectedOption === option ? "bg-green-500" : "bg-blue-500"
-            } hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded`}
+              selectedOption === option ? "bg-green-500" : "bg-black"
+            } hover:bg-black text-white font-semibold py-2 px-4 rounded`}
             onClick={() => handleAnswerClick(option)}
           >
             {option}
@@ -36,7 +36,7 @@ const QuizQuestion= ({
         ))}
       </div>
       <button
-        className="bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded mt-4"
+        className="bg-green-500 hover:bg-black text-white font-semibold py-2 px-4 rounded mt-4"
         onClick={isLastQuestion ? onSubmit : onNextQuestion}
       >
         {isLastQuestion ? "Selesai" : "Berikutnya"}

@@ -30,14 +30,14 @@ const Homepage = () => {
   return (
     <div className="w-full min-h-screen flex flex-col">
       <Navbar home={scrollToHome} about={scrollToAbout} programs={scrollToPrograms} />
-      <div ref={homeRef} className="flex flex-col lg:flex-row items-center py-16 px-8 md:px-16 lg:px-32">
+      <div ref={homeRef} className="flex flex-col lg:flex-row items-center py-16 px-8 md:px-16 lg:px-32 bg-primary">
         <div className="lg:w-1/2 text-center lg:text-left lg:mb-0 lg:mt-0 my-8">
-          <h1 className="md:text-6xl text-3xl font-semibold mb-4">Selamat datang</h1>
-          <span className="md:text-4xl text-xl text-yellow-500">Media Pembelajaran Sistem Pernafasan Kelas 8 SMP</span>
-          <p className="text-gray-700 text-lg mt-4">
-            Selamat Datang Pada Media Pembelajaran Sistem Pernafasan Kelas 8 SMP
+          <h1 className="md:text-6xl text-3xl font-semibold mb-4 uppercase font-Bangers tracking-widest">Selamat datang</h1>
+          <span className="md:text-4xl font-bold text-4xl text-white font-DM">Pada Media Pembelajaran Sistem Pernafasan Kelas 8 SMP</span>
+          <p className="text-black text-xl mt-4">
+            Sistem Pernafasan adalah sistem yang berfungsi untuk mengambil oksigen dari udara dan membuang karbondioksida ke udara.
           </p>
-          <a href="#" className="bg-yellow-500 hover:bg-blue-600 text-black font-semibold py-2 px-4 rounded-full mt-4 inline-block">
+          <a href="/dashboard/overview" className="bg-black text-white border-white hover:bg-button hover:text-black hover:border  font-semibold py-2 px-6 rounded-full mt-4 inline-block">
             Selengkapnya
           </a>
         </div>

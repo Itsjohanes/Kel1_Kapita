@@ -18,7 +18,7 @@ const Sidebar = ({ isSidebarOpen }) => {
         isSidebarOpen ? "block" : "hidden"
       } lg:block lg:w-64 bg-black text-white py-4`}
     >
-      <div className="text-center text-2xl text-[#AFF096] font-semibold">
+      <div className="text-center text-2xl tracking-wide text-primary font-Bangers font-semibold">
         <Link to="/">Sistem Pernafasan</Link>
       </div>
       <nav className="mt-8">

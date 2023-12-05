@@ -13,14 +13,14 @@ const AugmentedRealityMenuContent = () => {
       id: 1,
       title: "Faring, Laring, Trakea",
       description: "",
-      gambar: "/faring.jpg",
+      gambar: "/ar_trakea.jpg",
       link: "https://mind-ar2-laring.vercel.app/",
     },
     {
       id: 2,
       title: "Paru-Paru (Bronkus, Bronkiolus, dan Alveolus)",
       description: "",
-      gambar: "/bronkus.jpg",
+      gambar: "/ar_paru.jpg",
       link: "https://mind-ar-paru-paru.vercel.app/",
     },
   ];
@@ -29,7 +29,7 @@ const AugmentedRealityMenuContent = () => {
     <div className="container mx-auto mt-8">
       <h2 className="text-2xl font-bold mb-4">Organ Pernafasan</h2>
       {topics.map((topic) => (
-        <div key={topic.id} className="border p-4 rounded mb-4">
+        <div key={topic.id} className="p-4 rounded mb-4 bg-button">
           <img
             src={`${topic.gambar}`}
             alt={topic.title}
@@ -41,9 +41,9 @@ const AugmentedRealityMenuContent = () => {
             href={topic.link}
             target="_blank" // opens the link in a new tab/window
             rel="noopener noreferrer" // recommended for security
-            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+            className="block bg-black hover:bg-button hover:border hover:text-black text-white font-semibold py-3 rounded text-center mt-2 w-full "
           >
-            Pelajari Lebih Lanjut
+            Lihat Augmented Reality (AR)
           </a>
         </div>
       ))}

@@ -13,7 +13,7 @@ const Navbar = ({ home, about, programs }) => {
             <Link onClick={programs}>Programs</Link>
             <Link onClick={about}>About Us</Link>
 
-            <Link to="/dashboard/overview" className="border-2 px-4 py-2">
+            <Link to="/dashboard/overview" className="border-2 px-4 py-2 hover:bg-button">
               Mulai Belajar
             </Link>
           </div>

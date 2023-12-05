@@ -1,9 +1,9 @@
 const Programs = () => {
   return (
     <div className="p-4 md:px-8 lg:px-16 xl:px-32">
-      <h1 className="text-center text-2xl font-bold my-4">Fitur Menarik</h1>
+      <h1 className="text-center text-2xl lg:text-3xl font-bold my-8">Fitur Menarik</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-4">
-        <div className="bg-gray-200 p-4">
+        <div className="bg-primary px-4 py-8 rounded-md">
           <div className="flex flex-col justify-center items-center">
             <img
               className="rounded-full"
@@ -19,7 +19,7 @@ const Programs = () => {
             </p>
           </div>
         </div>
-        <div className="bg-gray-200 p-4">
+        <div className="bg-black text-white px-4 py-8 rounded-md">
           <div className="flex flex-col justify-center items-center">
             <img
               className="rounded-full"
@@ -35,7 +35,7 @@ const Programs = () => {
             </p>
           </div>
         </div>
-        <div className="bg-gray-200 p-4">
+        <div className="bg-secondary px-4 py-8 rounded-md">
           <div className="flex flex-col justify-center items-center">
             <img
               className="rounded-full"
@@ -53,7 +53,7 @@ const Programs = () => {
             </p>
           </div>
         </div>
-        <div className="bg-gray-200 p-4">
+        <div className="bg-gray px-4 py-8 rounded-md">
           <div className="flex flex-col justify-center items-center">
             <img
               className="rounded-full"
