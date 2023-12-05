@@ -5,8 +5,8 @@ const QuizResult = ({ score, totalQuestions }) => {
     <div className="bg-white p-4 rounded shadow">
       {score > totalQuestions / 2 ? (
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-bold mb-4 text-green-500">
-            Skor Anda adalah {score}
+          <h1 className="text-3xl sm:text-sm font-bold mb-4 text-green-500 ">
+            Skor Anda {score}
           </h1>
           <img
             className="rounded-full my-2"
@@ -22,8 +22,8 @@ const QuizResult = ({ score, totalQuestions }) => {
         </div>
       ) : (
         <div className="flex flex-col  justify-center items-center">
-          <h1 className="text-3xl font-bold mb-4 text-red-700">
-            Skor Anda adalah {score}
+          <h1 className="text-3xl sm:text-lg font-bold mb-4 text-red-700">
+            Skor Anda {score}
           </h1>
           <img
             className="my-2"

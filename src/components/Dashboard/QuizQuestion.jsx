@@ -28,7 +28,7 @@ const QuizQuestion= ({
             key={index}
             className={`${
               selectedOption === option ? "bg-green-500" : "bg-black"
-            } hover:bg-black text-white font-semibold py-2 px-4 rounded`}
+            } text-white font-semibold py-2 px-4 rounded`}
             onClick={() => handleAnswerClick(option)}
           >
             {option}
@@ -36,7 +36,7 @@ const QuizQuestion= ({
         ))}
       </div>
       <button
-        className="bg-green-500 hover:bg-black text-white font-semibold py-2 px-4 rounded mt-4"
+        className="bg-green-500 text-white font-semibold py-2 px-4 rounded mt-4"
         onClick={isLastQuestion ? onSubmit : onNextQuestion}
       >
         {isLastQuestion ? "Selesai" : "Berikutnya"}
