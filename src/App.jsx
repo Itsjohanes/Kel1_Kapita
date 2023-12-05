@@ -11,8 +11,8 @@ import AugmentedRealityMenuContent from "./components/Dashboard/AugmentedReality
 import MateriTemplate from "./components/Dashboard/MateriTemplate";
 import penyakitMateri from "./components/Dashboard/Data/PenyakitMateri";
 import SistemPernafasanMateri from "./components/Dashboard/Data/SistemPernafasanMateri";
-
-
+import Disclaimer from "./components/Dashboard/Disclaimer";
+import Policy from "./components/Dashboard/Policy";
 
 function App() {
   return (
@@ -21,10 +21,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/dashboard" element={<Dashboard />}>
-          <Route path="sistempernafasan" element={<MateriTemplate data={SistemPernafasanMateri} />} />
-          <Route path="penyakit" element={<MateriTemplate data={penyakitMateri}/>} />
+          <Route
+            path="sistempernafasan"
+            element={<MateriTemplate data={SistemPernafasanMateri} />}
+          />
+          <Route path="disclaimer" element={<Disclaimer />} />{" "}
+          <Route path="policy" element={<Policy />} />{" "}
+          <Route
+            path="penyakit"
+            element={<MateriTemplate data={penyakitMateri} />}
+          />
           <Route path="overview" element={<DashboardContent />} />{" "}
-
           {/*Ini adalah rute untuk augmented reality*/}
           <Route path="ar" element={<AugmentedReality />}>
             <Route index element={<AugmentedRealityMenuContent />} />
