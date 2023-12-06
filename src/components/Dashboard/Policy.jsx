@@ -10,7 +10,7 @@ const Policy = () => {
         <div className="text-center font-bold font-sans text-xl capitalize relative ">
           <img
             className="filter saturate-50 rounded-t-md w-full h-96 object-cover "
-            src="./privacy.jpg"
+            src="/privacy.jpg"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <p className="text-black text-2xl rounded-lg border px-4 py-2 font-bold bg-white">
