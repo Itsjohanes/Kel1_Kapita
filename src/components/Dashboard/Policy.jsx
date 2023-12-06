@@ -10,7 +10,7 @@ const Policy = () => {
         <div className="text-center font-bold font-sans text-xl capitalize relative ">
           <img
             className="filter saturate-50 rounded-t-md w-full h-96 object-cover "
-            src="https://img.freepik.com/free-vector/abstract-secure-technology-background_23-2148331624.jpg?w=996&t=st=1701849507~exp=1701850107~hmac=404ecf3cd995e0edbfeb4c68a1a3c790d618c3e35db94ba629bd22ae27d57002"
+            src="./privacy.jpg"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <p className="text-black text-2xl rounded-lg border px-4 py-2 font-bold bg-white">
