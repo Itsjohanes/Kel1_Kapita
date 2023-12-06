@@ -5,64 +5,71 @@ const Policy = () => {
     window.location.href = "./overview";
   };
   return (
-    <div>
-      <h1>
-        {" "}
-        <strong>Kebijakan Privasi untuk Media Sistem Pernafasan</strong>
-      </h1>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+      <div className="max-w-2xl mb-4 bg-white shadow-md rounded-md ">
+        <div className="text-center font-bold font-sans text-xl capitalize relative ">
+          <img
+            className="filter saturate-50 rounded-t-md w-full h-96 object-cover "
+            src="https://img.freepik.com/free-vector/abstract-secure-technology-background_23-2148331624.jpg?w=996&t=st=1701849507~exp=1701850107~hmac=404ecf3cd995e0edbfeb4c68a1a3c790d618c3e35db94ba629bd22ae27d57002"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <p className="text-black text-2xl rounded-lg border px-4 py-2 font-bold bg-white">
+              Privacy & Policy
+            </p>
+          </div>
+        </div>
+        <div className="p-6 font-sans text-justify">
+          <h1 className="font-bold lg:text-lg">
+            <strong>Kebijakan Privasi untuk Media Sistem Pernafasan</strong>
+          </h1>
 
-      <p>
-        Di Media Sistem Pernafasan, dapat diakses dari{" "}
-        <a
-          href="https://kel1-kapita.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://kel1-kapita.vercel.app/
-        </a>
-        , salah satu prioritas utama kami adalah privasi pengunjung kami.
-        Dokumen Kebijakan Privasi ini berisi jenis informasi yang dikumpulkan
-        dan dicatat oleh Media Sistem Pernafasan dan bagaimana kami
-        menggunakannya.
-      </p>
+          <p className="my-2">
+            Di Media Sistem Pernafasan, dapat diakses dari{" "}
+            <a
+              href="https://kel1-kapita.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://kel1-kapita.vercel.app/
+            </a>
+            , salah satu prioritas utama kami adalah privasi pengunjung kami.
+            Dokumen Kebijakan Privasi ini berisi jenis informasi yang
+            dikumpulkan dan dicatat oleh Media Sistem Pernafasan dan bagaimana
+            kami menggunakannya. Jika Anda memiliki pertanyaan tambahan atau
+            memerlukan informasi lebih lanjut tentang Kebijakan Privasi kami,
+            jangan ragu untuk menghubungi kami.
+          </p>
 
-      <p>
-        Jika Anda memiliki pertanyaan tambahan atau memerlukan informasi lebih
-        lanjut tentang Kebijakan Privasi kami, jangan ragu untuk menghubungi
-        kami.
-      </p>
+          <h2 className="font-bold lg:text-lg">
+            <strong>Log Files</strong>
+          </h2>
+          <p className="my-2">
+            Media Sistem Pernafasan mengikuti prosedur standar penggunaan file
+            log. File-file ini mencatat pengunjung ketika mereka mengunjungi
+            situs web.
+          </p>
 
-      <h2>
-        {" "}
-        <strong>Log Files</strong>
-      </h2>
-      <ul>
-        <li>
-          Media Sistem Pernafasan mengikuti prosedur standar penggunaan file
-          log. File-file ini mencatat pengunjung ketika mereka mengunjungi situs
-          web.
-        </li>
-      </ul>
+          <h2 className="font-bold lg:text-lg">
+            <strong>Kebijakan Privasi Pihak Ketiga</strong>
+          </h2>
+          <p className="my-2">
+          Perlu diingat bahwa Media Sistem Pernafasan tidak memiliki akses
+              atau kontrol atas cookie ini yang digunakan oleh pengiklan pihak
+              ketiga.
+          </p>
+        </div>
 
-      <h2>
-        <strong>Kebijakan Privasi Pihak Ketiga</strong>
-      </h2>
-      <ul>
-        <li>
-          Perlu diingat bahwa Media Sistem Pernafasan tidak memiliki akses atau
-          kontrol atas cookie ini yang digunakan oleh pengiklan pihak ketiga.
-        </li>
-      </ul>
-
-      {/* Sisanya diubah menjadi list sesuai struktur yang serupa */}
-
-      <button
-        className="bg-button text-black border font-bold py-2 px-4 rounded"
-        onClick={handleNextClick}
-      >
-        {" "}
-        Next<span className="ml-2">&#8594;</span>
-      </button>
+        {/* Sisanya diubah menjadi list sesuai struktur yang serupa */}
+        <div className="w-full flex justify-center items-center mt-4 mb-8">
+          <button
+            className="bg-button text-black border font-bold py-2 px-4 rounded "
+            onClick={handleNextClick}
+          >
+            {" "}
+            Next<span className="ml-2">&#8594;</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
