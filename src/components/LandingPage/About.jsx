@@ -6,7 +6,7 @@ const TeamMember = ({ name, role, image }) => {
       <img
         src={image}
         alt={name}
-        className="w-20 h-20 object-cover rounded-full mb-2"
+        className="w-20 h-20 object-cover rounded-full mb-2 max-w-full h-auto"
       />
       <h2 className="text-sm font-semibold">{name}</h2>
       <p className="text-xs text-gray-500">{role}</p>
@@ -19,7 +19,7 @@ const AboutUs = () => {
     {
       name: "Johannes Alexander Putra",
       role: "Web Developer",
-      image: "./johanes.PNG",
+      image: "./johannesa.png",
     },
     {
       name: "Azhar Arrozak",
@@ -30,6 +30,16 @@ const AboutUs = () => {
       name: "Hafil Sukamto",
       role: "Material Writter",
       image: "./hafil.jpg",
+    },
+    {
+      name: "Miftah Rizky Alamsyah",
+      role: "Web Developer",
+      image: "./geri.jpg",
+    },
+    {
+      name: "Geri Tri Panca Tamba",
+      role: "Logo Desainer",
+      image: "./miftah.webp",
     },
   ];
 
@@ -55,7 +65,7 @@ const AboutUs = () => {
       <h1 className="text-center text-2xl lg:text-3xl font-semibold mb-4">
         About Us
       </h1>
-      <div className="flex justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
