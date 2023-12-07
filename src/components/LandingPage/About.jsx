@@ -29,7 +29,7 @@ const AboutUs = () => {
     {
       name: "Hafil Sukamto",
       role: "Material Writter",
-      image: "./hafil.jpg",
+      image: "./hafil1.jpg",
     },
     {
       name: "Miftah Rizky Alamsyah",
