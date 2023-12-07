@@ -12,25 +12,15 @@ const Navbar = ({ home, about, programs }) => {
 
   return (
     <div className="border-b-2 fixed w-full bg-white">
-      <nav className="text-cyan-800 p-6">
-        <div
-          className={`${
-            isMenuOpen ? "flex flex-col items-center" : "flex"
-          }   justify-center text-xs md:justify-center md:text-xl lg:justify-end lg:text-xl`}
-        >
-          <div className="md:hidden flex">
-            {isMenuOpen ? (
-              <FaTimes
-                className="text-2xl cursor-pointer"
-                onClick={toggleMenu}
-              />
-            ) : (
-              <FaBars
-                className="text-2xl cursor-pointer"
-                onClick={toggleMenu}
-              />
-            )}
-          </div>
+      <nav className="text-cyan-800 p-6 flex items-center justify-between">
+        <div className="flex items-center">
+          <img
+            src="./lung-logo.png"
+            alt="Deskripsi Gambar"
+            className="w-20 h-20 mr-4"
+          />
+        </div>
+        <div className="flex items-center">
           <div
             className={`${
               isMenuOpen ? "flex flex-col" : "hidden"
@@ -42,7 +32,6 @@ const Navbar = ({ home, about, programs }) => {
             <Link onClick={programs} className="my-2">
               Programs
             </Link>
-
             <Link onClick={about} className="my-2">
               About Us
             </Link>
@@ -52,6 +41,19 @@ const Navbar = ({ home, about, programs }) => {
             >
               Mulai Belajar
             </Link>
+          </div>
+          <div className="md:hidden">
+            {isMenuOpen ? (
+              <FaTimes
+                className="text-2xl cursor-pointer"
+                onClick={toggleMenu}
+              />
+            ) : (
+              <FaBars
+                className="text-2xl cursor-pointer"
+                onClick={toggleMenu}
+              />
+            )}
           </div>
         </div>
       </nav>
