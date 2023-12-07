@@ -34,12 +34,12 @@ const AboutUs = () => {
     {
       name: "Miftah Rizky Alamsyah",
       role: "Web Developer",
-      image: "./geri.jpg",
+      image: "./miftah.webp",
     },
     {
       name: "Geri Tri Panca Tamba",
       role: "Logo Desainer",
-      image: "./miftah.webp",
+      image: "./geri.jpg",
     },
   ];
 
