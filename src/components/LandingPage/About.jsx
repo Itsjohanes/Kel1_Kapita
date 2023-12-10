@@ -31,16 +31,6 @@ const AboutUs = () => {
       role: "Material Writter",
       image: "./hafil1.jpg",
     },
-    {
-      name: "Miftah Rizky Alamsyah",
-      role: "Web Developer",
-      image: "./miftah.webp",
-    },
-    {
-      name: "Geri Tri Panca Tamba",
-      role: "Logo Desainer",
-      image: "./geri.jpg",
-    },
   ];
 
   const appExplanation = (
