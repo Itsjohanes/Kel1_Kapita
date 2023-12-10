@@ -39,11 +39,9 @@ const Homepage = () => {
         className="flex flex-col lg:flex-row items-center py-16 px-8 md:px-16 lg:px-32 bg-[#FFC3A9]"
       >
         <div className="lg:w-1/2 text-center lg:text-left lg:mb-0 lg:mt-0 my-8">
-          <h1 className="md:text-6xl md:pt-8 text-3xl font-semibold mb-4 uppercase font-Bangers tracking-widest">
-            Selamat datang
-          </h1>
+          <h1 className="md:text-6xl md:pt-8 text-3xl font-semibold mb-4 uppercase font-Bangers tracking-widest"></h1>
           <span className="md:text-4xl font-bold text-4xl text-white font-DM">
-            Pada Media Pembelajaran Sistem Pernafasan Kelas 8 SMP
+            Media Pembelajaran Sistem Pernafasan Kelas 8 SMP
           </span>
           <p className="text-black text-xl mt-4">
             Sistem Pernafasan adalah sistem yang berfungsi untuk mengambil
